@@ -9,9 +9,11 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "init:tailwindcss": "tailwindcss init -p",
-    "init:shadcn-ui": "shadcn-ui init"
+    "init:shadcn-ui": "shadcn-ui init",
+    "shadcn-ui:add": "shadcn-ui add"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "@tanstack/react-query": "^5.4.3",
     "@types/node": "^20.8.9",
     "autoprefixer": "^10.4.16",
@@ -22,6 +24,7 @@
     "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-paginate": "^8.2.0",
     "react-router-dom": "^6.17.0",
     "shadcn-ui": "^0.4.1",
     "tailwind-merge": "^2.0.0",

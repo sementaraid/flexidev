@@ -3,8 +3,7 @@ import {AxiosResponse, InternalAxiosRequestConfig, default as xhr} from "axios"
 
 
 const axios = xhr.create({
-  baseURL: "https://swapi.dev/api",
-  timeout: 5000
+  baseURL: "https://swapi.dev/api"
 })
 
 
@@ -15,7 +14,6 @@ const axiosResponseOnFullfiled = (value: AxiosResponse<any, any>) => {
 const axiosResponseOnRejeceted = (error: any) => {
   return Promise.reject(error)
 }
-
 
 const axiosRequestOnFullfiled = (config: InternalAxiosRequestConfig<any>) => {
   config.headers["Content-Type"] = "application/json"
